@@ -6,13 +6,13 @@ function result = DbScan(data, distFunc, epsilon, minPts)
     
     for index = 1:point_count
         
+        %get neighbours indexes
         neighbours = RangeQuery(data, distFunc, data(index,:), epsilon);
         
         neighbours_count = length(neighbours);
 
         if neighbours_count >= minPts
             cluster_count = cluster_count + 1;                        
-            [index, neighbours_count, neighbours_count >= minPts, cluster_count];
             
             % find all core neighbor labels
             is_core_points = neighbours(cluster_matrix(neighbours, 2) == 1);

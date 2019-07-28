@@ -8,14 +8,18 @@ function score = Hopkins(feature, fraction)
 
     feature_sample = feature(mask);
     
+    %create synthetic dataset range
     max_value = max(feature);
     min_value = min(feature);
     range = max_value - min_value;
     
+    %divide synthetic set equal width
     sample_count = length(feature_sample);
     step_size = range/(sample_count - 1);
     syntetic_set = min_value:step_size:max_value;
         
+    %find the shortest distance between every point in synthetic set and
+    %original set. add into matrix
     b = [];
     for grid_point=syntetic_set
         bi = min(abs(feature - grid_point));

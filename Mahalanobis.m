@@ -7,3 +7,4 @@ function value = Mahalanobis(point_1, point_2, dataset)
         
     value = sqrt(diff * data_cov_inv * transpose(diff));
 end
+
