@@ -6,9 +6,10 @@ work with vectors of arbitrary dimensions. Functions are used in exercises 2 and
 
 **Exercise 2. Representative based clustering**
 
-I implemented k-means algorithm in Matlab. The used all metric functions, I implemented
+I implemented k-means algorithm in Matlab. I used all metric functions, I implemented
 in exercise 1.
 
+![K-means clustering](/Pictures/Hw1MlKmeans.JPG)
 
 **Exercise 3. Density based clustering**
 
@@ -16,6 +17,7 @@ I implemented DBSCAN algorithm in Matlab. I used metric functions, I implemented
 in exercise 1. For DBSCAN, you do not have to specify cluster count but instead it is
 crucial to determine correct values for radius and points count in the given radius.
 
+![DBSCAN clustering](/Pictures/hw1MlDbscan.JPG)
 
 **Exercise 4. Dataset generation**
 
@@ -27,8 +29,11 @@ indistinguishable with respect to feature 3;
 Clusters 2 and 3 are distinguishable only using features 2 and 3 but
 indistinguishable with respect to feature 1.
 
+![Dataset creation](/Pictures/hw1MlDataCreation.png)
+
 I implemented Hopkins statistics to support findings. Results are as follows:
 
+![Dataset creation results](/Pictures/Hw1MlTable1.JPG)
 
 This table clearly shows that clusters that are indistinguishable in one dimension, have
 smaller Hopkins statistics score. For clusters 1 and 2, indistinguishable feature was 3 -
